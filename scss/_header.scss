@@ -1,0 +1,23 @@
+@import "colors";
+
+a {
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-color: $nav-color;
+        .logo {
+            img{
+                height: 3rem;
+                padding-right: 1em;
+            }
+        }
+        li{
+            a{
+                font-weight: bold !important;
+                &:hover{
+                    color: $nav-hover !important;
+                }
+            }
+    }
+}

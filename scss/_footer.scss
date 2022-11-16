@@ -1,0 +1,84 @@
+@import "colors";
+@import "media-queries";
+
+footer{
+    display: flex;
+    @include mediaquery(576px){
+        width: 100%;
+        background-color:$footer-color;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include mobile {
+        width: 100%;
+        background-color:$footer-color;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include tablet {
+        width: 100%;
+        background-color:$footer-color;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include desktop {
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color:$footer-color;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        @include mobile {
+            padding: 0;
+        }
+            p{
+                @include mediaquery(576px){
+                    font-size: 20px;
+                    text-align: center;
+                }
+                @include mobile {
+                    font-size: 1em;
+                    text-align: center;
+                }
+                @include tablet {
+                    font-size: 1.5em;
+                }
+                @include desktop {
+                    font-size: 20px;
+                }
+            }
+            img {
+                height: 25px;
+                padding-right: 10px;
+            }
+        @include tablet {
+            padding: 1em 1em;
+            p{
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+        @include desktop {
+            padding: 1em 1em;
+            p{
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+    .redes-sociales {
+        padding-right: 1em;
+        div {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        img{
+            height: 35px;
+        }
+    }
+}
